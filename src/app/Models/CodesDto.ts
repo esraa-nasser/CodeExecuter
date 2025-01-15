@@ -1,4 +1,5 @@
- class CodeDto{
-    Code: string ="";
-    Id: number = 0;
+ export class CodeDto{
+    codeText: string ="";
+    result: string ="";
+    id: number = 0;
 }

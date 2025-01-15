@@ -1,0 +1,19 @@
+.container {
+    margin: 20px;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-center; /* Align button to the right */
+    margin-bottom: 10px; /* Add spacing between button and table */
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  button {
+    min-width: 80px;
+  }
+  

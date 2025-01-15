@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Create New Code</h2>
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Code</mat-label>
+        <input matInput formControlName="code" placeholder="Enter Code" />
+        <mat-error *ngIf="createForm.get('code')?.invalid && createForm.get('code')?.touched">
+          Code is required
+        </mat-error>
+      </mat-form-field>
+  
+      <div class="actions">
+        <button mat-raised-button color="primary" type="submit" [disabled]="createForm.invalid">
+          Submit
+        </button>
+        <button mat-button color="warn" (click)="_router.navigate(['/'])">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

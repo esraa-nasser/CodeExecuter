@@ -1,0 +1,14 @@
+.container {
+    margin: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
